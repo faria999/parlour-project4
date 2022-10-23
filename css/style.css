@@ -1,0 +1,1959 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,600;0,700;1,700&family=Roboto:wght@300;400&display=swap');
+
+
+:root{
+    --black:#272D3B;
+    --pink:#ef5777;
+    --coral:#F7817F;
+    --blue:#000099;
+    --transparent-white:#e995954d;
+    --transparent-black:#d9d9d9;
+    --gradient:linear-gradient( 90deg, #f3e1e9, #F7817F);
+    --border:.2rem solid var(--black);
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+    --text-shadow:1rem .5rem 1rem;
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0; padding: 0;
+    border: none; border: border-box;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+   
+}
+*::selection{
+    background: var(--Red);
+    color:var(--coral);
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+}
+section{
+    padding: 3rem 9%;
+}
+.heading{
+    text-align: center;
+    text-transform: uppercase;
+    color: #272D3B;
+    margin-bottom: 2rem;
+    font-size: 5rem;
+    text-shadow: 1rem .5rem 1rem white;
+}
+.btn{
+    display: inline-block;
+    padding: 1rem 3rem;
+    border: var(--border);
+    background: var(--transparent-white);
+    color: black;
+    border-radius: .5rem;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    margin-top: 1rem;
+}
+.btn:hover{
+    background: black;
+    color: white;
+    border-color: aliceblue;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem 9%;
+    box-shadow: var(--box-shadow);
+    z-index: 1000;
+    margin: auto;
+    background-color:  transparent white;
+    backdrop-filter: blur(.5rem);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: var(--box-shadow);
+}
+header .navbar a{
+    text-decoration: none;
+    font-size: 2rem;
+    margin-left:  2rem;
+    color: var(--black);
+    font-weight: bolder;
+   
+
+}
+header .navbar a:hover{
+    color: #000099;
+}
+header .logo{
+    font-size: 3rem;
+    color: var(--black);
+    text-decoration: none;
+    font-weight: bolder;
+}
+ #menu-btn{
+
+    font-size: 3rem;
+    color:black ;
+    display: none;
+}
+
+.carousel  #content h1{
+    font-size: 6rem;
+    color: white;
+    text-shadow: .1rem .5rem 1rem var(--black);
+    font-weight: bolder;
+}
+.carousel  #content p{
+    font-size: 3rem;
+    color: white;
+    text-shadow: .1rem .5rem 1rem var(--black);
+    font-weight: bolder;
+}
+  .about {
+    
+    background: url(../opu.webp) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    object-fit: cover;
+    
+  }  
+  .about .container-box {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   padding-top: 10rem;
+    
+  }
+  .about .container-box .box{
+    flex: 1 1 40rem;
+
+  }
+
+  .about .container-box .box p{
+     
+     padding-right: 5rem;
+     font-weight: bold;
+     
+     text-align: center;
+     font-size: 1.7rem;
+     font-family: Arial, Helvetica, sans-serif;
+     text-shadow: .1rem .5rem 1rem var(--coral);
+     color:black;
+    
+  }
+
+  .about .container-box .box2{
+    flex: 1 1 10rem;
+    background-color: var(--transparent-white) ;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    padding:  1rem ;
+   
+   
+  }
+  
+  .about .container-box  .box2 .content h1{
+    font-size: 4rem;
+    padding: 2rem;
+   
+    
+  }
+  .about .container-box  .box2 .content h3{
+    font-size: 2.5rem;
+    padding: 1rem;
+    text-decoration: underline;
+  }
+  .about .container-box  .box2 .content p{
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+.services{
+    background: url(../f4.webp) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    object-fit: cover;
+}
+.services .slide{
+    height: 35rem;
+    overflow: hidden;
+    position: relative;
+    user-select: none;
+    margin-bottom: 4rem;
+    
+}
+.services .slide img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.services .slide:hover img{
+    transform: scale(1.1);
+}
+.services .slide .content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--transparent-white);
+    backdrop-filter: blur(.5rem);
+    padding: 2rem;
+    text-align: center;
+    transform: translateY(calc(100% - 6.5rem));
+    transition: .2s linear;
+}
+.services .slide:hover .content{
+    transform: translateY(0);
+}
+.services .slide .content h3{
+    font-size: 2rem;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: var(--text-shadow) black;
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.services .slide .content p{
+    font-size: 1.5rem;
+    color: black;
+    margin-top: 2rem;
+    text-shadow: var(--text-shadow) gray;
+    font-weight: bolder;
+}
+.categories{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 9%;
+    box-shadow: var(--box-shadow);
+    z-index: 1000;
+    margin: auto;
+   
+    
+   
+}
+#menu-btn{
+
+    font-size: 3rem;
+    color:black ;
+    display: none;
+}
+.categories .narbar h1{
+    padding-top: 6rem;
+
+}
+
+.categories .narbar a{
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 2rem;
+    color: black;
+    
+}
+.makeup{
+    background: url(../bg.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed
+    
+}
+.makeup h2{
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:var(--pink);
+    font-weight: bolder;
+   
+    margin: auto;
+    
+    
+
+}
+.makeup h2 span{
+    color:var(--blue);
+    
+}
+.makeup .box-container{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.makeup .box-container .box{
+    padding: 2rem 2rem;
+    height: 55rem;
+    width: 50rem;
+    margin: 2rem;
+    box-shadow: 0rem .5rem .1rem rgba(0,0, 0, 0.2);
+    flex:  1 1 40rem;
+    backdrop-filter: blur(.5rem);
+    background-color:var(--transparent-white);
+
+    
+   
+}
+
+
+
+.makeup .box-container .box:hover{
+    transform: scale(1.1);
+    
+   
+}
+.makeup .box-container .box img{
+    background-size: cover;
+    object-fit: fill;
+    width: 100%;
+    height: 50%;
+    
+    
+    
+}
+.makeup .box-container .box h3{
+    font-size: 2.5rem;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: underline;
+
+}
+.makeup .box-container .box  li{
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: black;
+    text-shadow: var(--text-shadow) white;
+}
+.makeup .box-container .box  a {
+    background-color: var(--coral);
+    border: none;
+    text-align: center;
+    border-radius: 5rem;
+    margin: auto;
+   
+   
+    
+}
+.makeup .box-container .box a:hover{
+    background-color:black;
+    color:white;
+}
+.makeup .box-container .box .PRICE h5{
+    font-size: 3rem;
+   
+    
+
+}
+.makeup .box-container .box .PRICE span{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: red;
+}
+.haircut{
+    background: url(../haircutbg.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed
+}
+
+.haircut h2{
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:var(--pink);
+    font-weight: bolder;
+    margin-top: 5rem;
+    
+    
+    
+
+}
+.haircut span{
+    color:var(--blue);
+}
+.haircut .box-container{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.haircut .box-container .box{
+    padding: 2rem 2rem;
+    height: 55rem;
+    width: 50rem;
+    margin: 2rem;
+    box-shadow: 0rem .5rem .1rem rgba(0,0, 0, 0.2);
+    flex:  1 1 40rem;
+    backdrop-filter: blur(.5rem);
+    background-color:var(--transparent-white);
+
+    
+   
+}
+
+
+
+.haircut .box-container .box:hover{
+    transform: scale(1.1);
+    
+   
+}
+.haircut .box-container .box img{
+    background-size: cover;
+    object-fit: fill;
+    width: 100%;
+    height: 50%;
+    
+    
+    
+}
+.haircut .box-container .box h3{
+    font-size: 2.5rem;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bolder;
+    
+
+}
+.haircut .box-container .box  p{
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    color: black;
+    text-shadow: var(--text-shadow) white;
+}
+
+.haircut .box-container .box a:hover{
+    background-color:black;
+    color:white;
+}
+.haircut .box-container .box .PRICE h5{
+    font-size: 3rem;
+   
+    
+
+}
+.haircut .box-container .box .PRICE span{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: red;
+}
+.waxing{
+    background: url(../waxbg.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed
+}
+
+.waxing h2{
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:var(--pink);
+    font-weight: bolder;
+    margin-top: 5rem;
+    
+    
+    
+
+}
+.waxing span{
+    color:var(--blue);
+}
+.waxing .box-container{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.waxing .box-container .box{
+    padding: 2rem 2rem;
+    height: 55rem;
+    width: 50rem;
+    margin: 2rem;
+    box-shadow: 0rem .5rem .1rem rgba(0,0, 0, 0.2);
+    flex:  1 1 40rem;
+    backdrop-filter: blur(.5rem);
+    background-color:var(--transparent-white);
+
+    
+   
+}
+
+
+
+.waxing .box-container .box:hover{
+    transform: scale(1.1);
+    
+   
+}
+.waxing .box-container .box img{
+    background-size: cover;
+    object-fit: fill;
+    width: 100%;
+    height: 50%;
+    
+    
+    
+}
+.waxing .box-container .box h3{
+    font-size: 2.5rem;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bolder;
+    color: red;
+    
+
+}
+.waxing .box-container .box  p{
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color:black;
+    text-shadow: var(--text-shadow) white;
+}
+
+.waxing .box-container .box a:hover{
+    background-color:black;
+    color:white;
+}
+.waxing .box-container .box .PRICE h5{
+    font-size: 2rem;
+   
+    
+
+}
+.waxing .box-container .box .PRICE span{
+    font-size: 3rem;
+    font-weight: bolder;
+    color: red;
+}
+.Hairstyling{
+    background: url(../hair\ styling\ bg2.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed
+}
+
+.Hairstyling h2{
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    font-weight: bolder;
+    margin-top: 5rem;
+    
+    
+    
+
+}
+.Hairstyling span{
+    color:var(--blue);
+}
+.Hairstyling .box-container{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.Hairstyling .box-container .box{
+    padding: 2rem 2rem;
+    height: 55rem;
+    width: 50rem;
+    margin: 2rem;
+    box-shadow: 0rem .5rem .1rem rgba(0,0, 0, 0.2);
+    flex:  1 1 40rem;
+    backdrop-filter: blur(.5rem);
+    background-color:var(--transparent-white);
+
+    
+   
+}
+
+
+
+.Hairstyling .box-container .box:hover{
+    transform: scale(1.1);
+    
+   
+}
+.Hairstyling .box-container .box img{
+    background-size: cover;
+    object-fit: fill;
+    width: 100%;
+    height: 50%;
+    
+    
+    
+}
+.Hairstyling .box-container .box h3{
+    font-size: 2.5rem;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+    
+
+}
+.Hairstyling .box-container .box  p{
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color:white;
+    text-shadow: var(--text-shadow) black;
+}
+
+.Hairstyling .box-container .box a:hover{
+    background-color:black;
+    color:white;
+}
+.Hairstyling .box-container .box .PRICE h5{
+    font-size: 2rem;
+   
+    
+
+}
+.Hairstyling .box-container .box .PRICE span{
+    font-size: 3rem;
+    font-weight: bolder;
+    color: white;
+}
+
+.haircolor{
+    background: url(../hairclrbg3.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed
+}
+
+.haircolor h2{
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    font-weight: bolder;
+    margin-top: 5rem;
+    
+    
+    
+
+}
+.haircolor span{
+    color:var(--blue);
+}
+.haircolor .box-container{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.haircolor .box-container .box{
+    padding: 2rem 2rem;
+    height: 55rem;
+    width: 50rem;
+    margin: 2rem;
+    box-shadow: 0rem .5rem .1rem rgba(0,0, 0, 0.2);
+    flex:  1 1 40rem;
+    backdrop-filter: blur(.5rem);
+    background-color:var(--transparent-white);
+
+    
+   
+}
+
+
+
+.haircolor .box-container .box:hover{
+    transform: scale(1.1);
+    
+   
+}
+.haircolor .box-container .box img{
+    background-size: cover;
+    object-fit: fill;
+    width: 100%;
+    height: 50%;
+    
+    
+    
+}
+.haircolor .box-container .box h3{
+    font-size: 2.5rem;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bolder;
+    color: purple;
+    
+
+}
+.haircolor .box-container .box  p{
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color:black;
+    text-shadow: var(--text-shadow) white;
+}
+
+.haircolor .box-container .box a:hover{
+    background-color:black;
+    color:white;
+}
+.haircolor .box-container .box .PRICE h5{
+    font-size: 2rem;
+   
+    
+
+}
+.haircolor .box-container .box .PRICE span{
+    font-size: 3rem;
+    font-weight: bolder;
+    color: white;
+}
+
+
+.hairextension{
+    background: url(../hre.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed
+}
+
+.hairextension h2{
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:purple;
+    font-weight: bolder;
+    margin-top: 5rem;
+    
+    
+    
+
+}
+.hairextension span{
+    color:blueviolet;
+}
+.hairextension .box-container{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.hairextension .box-container .box{
+    padding: 2rem 2rem;
+    height: 55rem;
+    width: 50rem;
+    margin: 2rem;
+    box-shadow: 0rem .5rem .1rem rgba(0,0, 0, 0.2);
+    flex:  1 1 40rem;
+    backdrop-filter: blur(.5rem);
+    background-color:var(--transparent-white);
+
+    
+   
+}
+
+
+
+.hairextension .box-container .box:hover{
+    transform: scale(1.1);
+    
+   
+}
+.hairextension .box-container .box img{
+    background-size: cover;
+    object-fit: fill;
+    width: 100%;
+    height: 50%;
+    
+    
+    
+}
+.hairextension .box-container .box h3{
+    font-size: 2.7rem;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bolder;
+    color: black;
+    
+
+}
+.hairextension .box-container .box  p{
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color:black;
+    text-shadow: var(--text-shadow) white;
+}
+
+.hairextension .box-container .box a:hover{
+    background-color:black;
+    color:white;
+}
+.hairextension .box-container .box .PRICE h5{
+    font-size: 2rem;
+    color: black;
+   
+    
+
+}
+.hairextension .box-container .box .PRICE span{
+    font-size: 3rem;
+    font-weight: bolder;
+    color: purple;
+}
+
+.gallery{
+    background-color: var(--transparent-white);
+    background: url(../f3.webp) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+.gallery .box-container{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.gallery .box-container .box{
+    padding: 1rem 1rem;
+    height: 40rem;
+    width: 45rem;
+    margin: 1.5rem;
+    box-shadow: 1rem .5rem 2rem rgba(0,0, 0, 0.2);
+    flex:  1 1 40rem;
+   
+    background-color:white;
+    border-radius: 5rem;
+  
+
+}
+
+.gallery .box-container .box:hover{
+   background-color: palevioletred ;
+   transform: scale(1.1);
+}
+
+.gallery .box-container .box img{
+    background-size: cover;
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+}
+.gallery .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.gallery .link a{
+    font-size: 4rem;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    
+}
+.contact {
+    background:url(../contactbg4.jpg) no-repeat ;
+    background-size: cover;
+    background-attachment: fixed;
+    object-fit: cover;
+   
+   
+}
+
+.contact .box-container{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+
+.contact .box-container .box{
+    flex: 1 1 60rem;
+    padding: 1rem 1rem;
+    margin: 1.5rem;
+    text-align: center;
+    
+    
+   
+}
+.contact .box-container .box h3{
+    font-size: 4rem;
+    color: black;
+    padding: 2rem;
+}
+.contact .box-container .box p{
+    font-size: 1.9rem;
+    white-space: pre;
+    padding: 1rem;
+}
+.contact .box-container .box .icon{
+    font-size: 4rem;
+}
+.contact  form {
+    background-color: var(--transparent-white);
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+    box-shadow: var(--box-shadow);
+    border-radius: 5rem;
+    
+}
+
+.contact form .inputBox input, .contact form .inputBox textarea{
+    width: 80%;
+    margin: 1.5rem 1rem;
+    padding: 1rem 0;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    border-radius: 5rem;
+ 
+    
+    
+   
+}
+.contact form .inputBox input::placeholder,.contact form .inputBox textarea::placeholder{
+    padding: 1rem;
+    color: #ef5777;
+    font-weight: bolder;
+  
+   
+}
+.contact form .btn{
+    background-color: #ED176F;
+    border: none;
+    border-radius: 5rem;
+    color: white;
+}
+
+.contact form .btn:hover{
+    background-color: purple;
+    color:white;
+    font-weight: bolder;
+}
+.container-boxx{
+    padding: 0 0;
+    background: url(../flower.webp) transparent no-repeat;
+    background-size: cover;
+    padding-bottom: 0;
+    
+   
+    
+   
+}
+.container-boxx .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.container-boxx .row i{
+    padding: 1rem 1rem;
+    font-size: 4rem;
+    color: black;
+  text-align: center;
+  
+   
+}
+.container-boxx .row #creadit{
+    font-size: 2.5rem;
+    padding: 1rem;
+    border-top: .3rem solid black;
+}
+.container-boxx .row #creadit span{
+    color: #ED176F;
+    font-size: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1400px){
+    html{
+        font-size: 62.5%; 
+    }
+    .carousel  #content h1{
+        font-size: 4rem;
+       
+    }
+    .carousel  #content p{
+        font-size: 2rem;
+        
+    }
+    .about  .container-box .box{
+        flex: 1 1 30rem;
+       
+    }
+    .about  .container-box .box2{
+        flex: 1 1 1rem;
+        
+    }
+    .about  .container-box .box p{
+        font-size: 1.2rem;
+       
+     }
+     .about h1{
+        font-size: 4rem;
+        padding-top: 2rem;
+     }
+     
+      .about .container-fluid .box2 .content h1{
+        font-size: 2rem;
+        
+      }
+      .about .container-fluid .box2 .content h3{
+        font-size: 1rem;
+      }
+      .about .container-fluid   .box2 .content p{
+        font-size: .5rem;
+      }
+      .heading{
+        font-size: 3rem;
+        
+    }
+    .services .slide .content h3{
+        font-size: 1.5rem;
+       
+    }
+    .services .slide .content p{
+        font-size: 1rem;
+        color: black;
+        margin-top: 2.5rem;
+    }
+    .btn{
+        padding: 1rem 2rem;
+        font-size: 1rem;
+       
+    }
+    .services .slide{
+        height: 25rem;
+       
+        
+    }
+    .categories .narbar a{
+        padding-top: 2rem;
+        padding: 1rem;
+    
+    }
+    .makeup .box-container .box{
+       
+        flex:  1 1 25rem;
+        height: 40rem;
+         width: 35rem;
+        
+       
+    }
+    .makeup .box-container .box h3{
+        font-size: 1.9rem;
+        color: red;
+    }
+    .makeup .box-container .box  li{
+       
+        font-size: 1.2rem;
+        
+    }
+    
+    
+    .makeup .box-container .box .PRICE h5{
+        font-size: 2rem;
+        color: red;
+        
+    
+    }
+    .makeup .box-container .box .PRICE span{
+        font-size: 1.5rem;
+    }
+    .makeup h2{
+        font-size: 4rem; 
+    
+    }
+    
+    .haircut .box-container .box{
+        flex:  1 1 25rem;
+        height: 40rem;
+         width: 35rem;
+        
+       
+    }
+    .haircut .box-container .box h3{
+        font-size: 1.7rem;
+        color: red;
+    }
+    .haircut .box-container .box  p{
+       
+        font-size: 1rem;
+        
+    }
+    
+    
+    .haircut .box-container .box .PRICE h5{
+        font-size: 1.2rem;
+        color: red;
+        
+    
+    }
+    .haircut .box-container .box .PRICE span{
+        font-size: 1.5rem;
+    }
+    .haircut h2{
+        font-size: 4rem; 
+    
+    }
+    
+    .waxing .box-container .box{
+        flex:  1 1 25rem;
+        height: 40rem;
+         width: 35rem;
+        
+       
+    }
+    .waxing .box-container .box h3{
+        font-size: 1.7rem;
+        color: red;
+    }
+    .waxing .box-container .box  p{
+       
+        font-size: 1rem;
+        
+    }
+    
+    
+    .waxing .box-container .box .PRICE h5{
+        font-size: 1.2rem;
+        color: red;
+        
+    
+    }
+    .waxing .box-container .box .PRICE span{
+        font-size: 1.5rem;
+    }
+    .waxing h2{
+        font-size: 4rem; 
+    
+    }
+
+    .Hairstyling .box-container .box{
+        flex:  1 1 25rem;
+        height: 40rem;
+         width: 35rem;
+        
+       
+    }
+    .Hairstyling .box-container .box h3{
+        font-size: 1.7rem;
+        color:white;
+    }
+    .Hairstyling .box-container .box  p{
+       
+        font-size: 1rem;
+        
+    }
+    
+    
+    .Hairstyling .box-container .box .PRICE h5{
+        font-size: 1.2rem;
+        color: red;
+        
+    
+    }
+    .Hairstyling .box-container .box .PRICE span{
+        font-size: 1.5rem;
+    }
+    .Hairstyling h2{
+        font-size: 4rem; 
+    
+    }
+    
+    
+    .haircolor .box-container .box{
+        flex:  1 1 25rem;
+        height: 40rem;
+         width: 35rem;
+        
+       
+    }
+    .haircolor .box-container .box h3{
+        font-size: 1.7rem;
+        color:purple;
+    }
+    .haircolor .box-container .box  p{
+       
+        font-size: 1rem;
+        
+    }
+    
+    
+    .haircolor .box-container .box .PRICE h5{
+        font-size: 1.2rem;
+        color: black;
+        
+    
+    }
+    .haircolor .box-container .box .PRICE span{
+        font-size: 1.5rem;
+    }
+    .haircolor h2{
+        font-size: 4rem; 
+    
+    }
+
+
+    .hairextension .box-container .box{
+        flex:  1 1 25rem;
+        height: 40rem;
+         width: 35rem;
+        
+       
+    }
+    .hairextension .box-container .box h3{
+        font-size: 1.7rem;
+       
+    }
+    .hairextension .box-container .box  p{
+       
+        font-size: 1rem;
+        
+    }
+    
+    
+    .hairextension .box-container .box .PRICE h5{
+        font-size: 1.2rem;
+        color: black;
+        
+    
+    }
+    .hairextension .box-container .box .PRICE span{
+        font-size: 1.5rem;
+    }
+    .hairextension h2{
+        font-size: 4rem; 
+    
+    }
+    .gallery .box-container .box{
+        flex: 1 1 30rem;
+        width: 30rem;
+        height: 30rem;
+    }
+    
+    .gallery .link a{
+        font-size: 3rem;
+       
+        
+    }
+    
+    .contact .box-container .box{
+        flex: 1 1 50rem;
+        
+       
+    }
+    .contact .box-container .box p{
+        font-size: 1.5rem;
+        
+    }
+    .contact .box-container .box .icon{
+        font-size: 3rem;
+    }
+    
+    .contact .box-container .box h3{
+        font-size: 3rem;
+    }
+    
+    .contact form .inputBox input, .contact form .inputBox textarea{
+        width: 80%;
+        margin: 1rem 0;
+        padding: 1rem 0;
+        font-size: 1.2rem;
+        text-transform: capitalize;
+        border-radius: 5rem;
+        
+       
+    }
+    
+    .container-boxx .row #creadit{
+        font-size: 1.5rem;
+        
+    }
+    .container-boxx .row #creadit span{
+        font-size: 2rem ;
+    }
+    .container-boxx{
+        padding:  0;
+        padding-bottom: 0;
+       
+
+    }
+    
+    
+}
+
+
+@media(max-width:1200px){
+    html{
+        font-size: 58%; 
+    }
+    section{
+        padding: 2rem 9%;
+    }
+    .carousel  #content h1{
+        font-size: 3.5rem;
+       
+    }
+    .carousel  #content p{
+        font-size: 1.5rem;
+        
+    }
+    .about  .container-box .box{
+        flex: 1 1 30rem;
+    }
+    .about  .container-box .box2{
+        flex: 1 1 30rem;
+    }
+    .about  .container-box .box p{
+        font-size: 1.5rem;
+       
+     }
+     
+     
+      .about .container-fluid .box2 .content h1{
+        font-size: 1rem;
+        
+      }
+      .about .container-fluid .box2 .content h3{
+        font-size: .5rem;
+      }
+      .about .container-fluid .box2 .content p{
+        font-size: .5rem;
+      }
+      .makeup h2{
+        font-size: 3rem;
+    }
+
+       .makeup .box-container .box{
+        height: 55rem;
+         width: 50rem;
+        
+       
+    }
+    .haircut h2{
+        font-size: 3rem;
+    }
+    .haircut .box-container .box{
+        height: 55rem;
+         width: 50rem;
+        
+       
+    }
+    .waxing .box-container .box p{
+        font-size: 1.2rem;
+    }
+    .waxing h2{
+        font-size: 3rem;
+    }
+    .waxing .box-container .box{
+        height: 55rem;
+         width: 50rem;
+        
+       
+    }
+    
+    .Hairstyling .box-container .box h3{
+        font-size: 2.4rem;
+        color: white;
+    }
+    .Hairstyling h2{
+        font-size: 3rem;
+       
+    }
+    .Hairstyling .box-container .box{
+        height: 55rem;
+         width: 50rem;
+        
+       
+    }
+    .Hairstyling .box-container .box p{
+        font-size: 1.2rem;
+        text-shadow: var(--text-shadow) black;
+        color: aliceblue;
+    }
+    .haircolor .box-container .box h3{
+        font-size: 2.4rem;
+        color: white;
+    }
+    .haircolor h2{
+        font-size: 3rem;
+       
+    }
+    .haircolor .box-container .box{
+        height: 55rem;
+         width: 50rem;
+        
+       
+    }
+    .hairextension .box-container .box p{
+        font-size: 1.2rem;
+        text-shadow: var(--text-shadow) black;
+        color: aliceblue;
+    }
+
+    .hairextension .box-container .box h3{
+        font-size: 2.4rem;
+        color: white;
+    }
+    .hairextension h2{
+        font-size: 3rem;
+       
+    }
+    .hairextension .box-container .box{
+        height: 55rem;
+         width: 50rem;
+        
+       
+    }
+    .hairextension .box-container .box p{
+        font-size: 1.2rem;
+        text-shadow: var(--text-shadow) black;
+        color: aliceblue;
+    }
+      
+
+    
+    
+    
+    
+    
+}
+@media(max-width:991px){
+    html{
+        font-size: 55%; 
+    }
+    
+    
+    
+    
+    .about  .container-box .box p{
+        font-size: 1.5rem;
+       
+     }
+     
+     .makeup .box-container .box{
+       
+        flex:  1 1 35rem;
+        
+       
+    }
+    .makeup .box-container .box li{
+        font-size: 2rem;
+    }
+    .haircolor .box-container .box{
+       
+        flex:  1 1 35rem;
+        
+       
+    }
+    .haircolor .box-container .box p{
+        font-size: 1.5rem;
+    }
+    .Hairstyling .box-container .box{
+       
+        flex:  1 1 35rem;
+        
+       
+    }
+    .Hairstyling .box-container .box p{
+        font-size: 1.5rem;
+    }
+    .haircut .box-container .box{
+       
+        flex:  1 1 35rem;
+        
+       
+    }
+    .haircut .box-container .box p{
+        font-size: 1.5rem;
+    }
+    .waxing .box-container .box{
+       
+        flex:  1 1 35rem;
+        
+       
+    }
+    .waxing .box-container .box p{
+        font-size: 1.5rem;
+    }
+    .hairextension .box-container .box{
+       
+        flex:  1 1 35rem;
+        
+       
+    }
+    .hairextension .box-container .box p{
+        font-size: 1.5rem;
+    }
+
+    
+}
+@media(max-width:768px){
+    html{
+        font-size: 55%; 
+    }
+    #menu-btn{
+        display: inline-block;
+        transition: all .2s linear;
+        
+        
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--transparent-white);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+     
+    header .navbar a{
+        display: block;
+        width: 100%;
+        padding: 1rem 0;
+        margin: 0 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color:whitesmoke;
+        text-shadow: .1rem .5rem 1rem black;
+        font-size: 2.5rem;
+        font-weight: bolder;
+        
+    }
+    header .navbar a:hover{
+        padding-right: 2rem;
+    }
+
+    .fa-times{
+        transform: rotate(180deg);
+    }
+    .categories .narbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 20rem;
+        background-color:var(--transparent-white);
+        
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .categories .narbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+     
+    .categories .narbar a{
+        display: block;
+        width: 100%;
+        padding: 1rem 0;
+        margin: 0 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color:whitesmoke;
+        text-shadow: .1rem .5rem 1rem black;
+        font-size: 2.5rem;
+        font-weight: bolder;
+        
+    }
+    .categories .narbar a:hover{
+        padding-right: 2rem;
+    }
+
+
+    .carousel  #content h1{
+        font-size: 4rem;
+       
+    }
+    .carousel  #content p{
+        font-size: 1.7rem;
+        
+    }
+    .about  .container-box .box p{
+        font-size: 1.7rem;
+       
+     }
+     .makeup .box-container .box{
+       
+        flex:  1 1 40rem;
+        
+       
+    }
+     .makeup .box-container .box h3{
+        font-size: 2.4rem;
+        color: red;
+    }
+    .makeup .box-container .box  li{
+       
+        font-size: 1.9rem;
+        
+    }
+    
+    
+    .makeup .box-container .box .PRICE h5{
+        font-size: 2.5rem;
+        color: red;
+        
+    
+    }
+    .makeup .box-container .box .PRICE span{
+        font-size: 1.7rem;
+    }
+    .makeup h2{
+        font-size: 4rem; 
+    
+    }
+    
+    .haircut .box-container .box{
+       
+        flex:  1 1 40rem;
+        
+       
+    }
+    .haircut .box-container .box h3{
+        font-size: 2.4rem;
+        color: red;
+    }
+    .haircut .box-container .box  p{
+       
+        font-size: 1rem;
+        
+    }
+    
+    
+    .haircut .box-container .box .PRICE h5{
+        font-size: 2.5rem;
+        color: red;
+        
+    
+    }
+    .haircut .box-container .box .PRICE span{
+        font-size: 1.7rem;
+    }
+
+    .waxing .box-container .box h3{
+        font-size: 2.4rem;
+        color: red;
+    }
+    .waxing .box-container .box  p{
+       
+        font-size: 1.3rem;
+        
+    }
+    .waxing .box-container .box{
+       
+        flex:  1 1 40rem;
+        
+       
+    }
+    
+    
+    .Hairstyling .box-container .box .PRICE h5{
+        font-size: 2.5rem;
+        color: red;
+        
+    
+    }
+    .Hairstyling .box-container .box .PRICE span{
+        font-size: 1.7rem;
+    }
+    
+    .Hairstyling .box-container .box h3{
+        font-size: 2.4rem;
+        color: white;
+       
+    }
+    .Hairstyling .box-container .box  p{
+       
+        font-size: 1.3rem;
+        text-shadow: var(--text-shadow) black;
+        color: aliceblue;
+    }
+    .Hairstyling .box-container .box{
+       
+        flex:  1 1 40rem;
+        
+       
+    }
+    
+    .haircolor .box-container .box .PRICE h5{
+        font-size: 2.5rem;
+        
+        
+    
+    }
+    .haircolor .box-container .box .PRICE span{
+        font-size: 1rem;
+    }
+
+    .haircolor .box-container .box .PRICE h5{
+        font-size: 1.5rem;
+        color: black;
+        
+    
+    }
+    .haircolor .box-container .box .PRICE span{
+        font-size: 2.5rem;
+    }
+    
+    .haircolor .box-container .box h3{
+        font-size: 2.4rem;
+        
+       
+    }
+    .haircolor .box-container .box  p{
+       
+        font-size: 1.3rem;
+        text-shadow: var(--text-shadow) whitesmoke;
+        color: black;
+    }
+    
+    
+    .haircolor .box-container .box .PRICE h5{
+        font-size: 2.5rem;
+        color: red;
+        
+    
+    }
+    .haircolor .box-container .box .PRICE span{
+        font-size: 1.7rem;
+    }
+    .haircolor .box-container .box{
+       
+        flex:  1 1 40rem;
+        
+       
+    }
+
+
+
+    
+    .hairextension .box-container .box .PRICE span{
+        font-size: 1rem;
+    }
+
+    .hairextension .box-container .box .PRICE h5{
+        font-size: 1.5rem;
+        color: black;
+        
+    
+    }
+    .hairextension .box-container .box .PRICE span{
+        font-size: 2.5rem;
+    }
+    
+    .hairextension .box-container .box h3{
+        font-size: 2.4rem;
+        
+       
+    }
+    .hairextension .box-container .box  p{
+       
+        font-size: 1.3rem;
+        text-shadow: var(--text-shadow) whitesmoke;
+        color: white;
+    }
+    
+    
+    .hairextension .box-container .box .PRICE h5{
+        font-size: 2.5rem;
+        color: red;
+        
+    
+    }
+    .hairextension .box-container .box .PRICE span{
+        font-size: 1.7rem;
+    }
+    .hairextension .box-container .box{
+       
+        flex:  1 1 40rem;
+        
+       
+    }
+   
+   
+    
+      
+    
+   
+    
+      
+    
+      
+    
+    
+}
+
+
+
+@media (max-width:500px){
+    html{
+        font-size: 50%; 
+    }
+    .carousel  #content h1{
+        font-size: 5rem;
+       
+    }
+    .carousel  #content p{
+        font-size: 1.7rem;
+        
+    }
+    .about  .container-box .box p{
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+     }
+     .makeup .box-container .box h3{
+        font-size: 3rem;
+        color: red;
+    }
+    .makeup .box-container .box  li{
+       
+        font-size: 2rem;
+        color:black;
+        font-weight:bolder ;
+        
+    }
+    
+    
+    .makeup .box-container .box .PRICE h5{
+        font-size: 2rem;
+        color: red;
+        
+    
+    }
+    .makeup .box-container .box .PRICE span{
+        font-size: 1.5rem;
+        color: red;
+    }
+    
+    
+
+.haircut .box-container .box h3{
+    font-size: 3rem;
+    color: red;
+}
+.haircut .box-container .box  p{
+   
+    font-size: 1.2rem;
+    color:black;
+    font-weight:bolder ;
+    
+}
+
+
+.haircut .box-container .box .PRICE h5{
+    font-size: 2rem;
+    color: red;
+    
+
+}
+.haircut .box-container .box .PRICE span{
+    font-size: 2.7rem;
+    color: red;
+}
+.waxing .box-container .box h3{
+    font-size: 3rem;
+    color: red;
+}
+.waxing .box-container .box  p{
+   
+    font-size: 1.2rem;
+    color:black;
+    font-weight:bolder ;
+    
+}
+
+
+.waxing .box-container .box .PRICE h5{
+    font-size: 2rem;
+    color: red;
+    
+
+}
+.waxing .box-container .box .PRICE span{
+    font-size: 2.7rem;
+    color: red;
+}
+.Hairstyling .box-container .box h3{
+    font-size: 3rem;
+    color: white;
+}
+.Hairstyling .box-container .box  p{
+   
+    font-size: 1.2rem;
+    color:white;
+    font-weight:bolder ;
+    text-shadow: var(--text-shadow) black;
+    
+}
+
+
+.Hairstyling .box-container .box .PRICE h5{
+    font-size: 2rem;
+    color: red;
+    
+
+}
+.Hairstyling .box-container .box .PRICE span{
+    font-size: 2.7rem;
+    color:white;
+}
+
+
+
+
+
+
+
+
+
+
