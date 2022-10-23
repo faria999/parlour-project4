@@ -117,7 +117,7 @@ header .logo{
 }
   .about {
     
-    background: url(../opu.webp) no-repeat;
+    background: url(../images/opu.webp) no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -176,7 +176,7 @@ header .logo{
     font-weight: bold;
   }
 .services{
-    background: url(../f4.webp) no-repeat;
+    background: url(../images/f4.webp) no-repeat;
     background-size: cover;
     background-attachment: fixed;
     object-fit: cover;
@@ -263,7 +263,7 @@ header .logo{
     
 }
 .makeup{
-    background: url(../bg.webp) no-repeat;
+    background: url(../images/bg.webp) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed
@@ -364,7 +364,7 @@ header .logo{
     color: red;
 }
 .haircut{
-    background: url(../haircutbg.webp) no-repeat;
+    background: url(../images/haircutbg.webp) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed
@@ -455,7 +455,7 @@ header .logo{
     color: red;
 }
 .waxing{
-    background: url(../waxbg.webp) no-repeat;
+    background: url(../images/waxbg.webp) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed
@@ -547,7 +547,7 @@ header .logo{
     color: red;
 }
 .Hairstyling{
-    background: url(../hair\ styling\ bg2.webp) no-repeat;
+    background: url(../images/hair\ styling\ bg2.webp) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed
@@ -640,7 +640,7 @@ header .logo{
 }
 
 .haircolor{
-    background: url(../hairclrbg3.jpg) no-repeat;
+    background: url(../images/hairclrbg3.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed
@@ -734,7 +734,7 @@ header .logo{
 
 
 .hairextension{
-    background: url(../hre.jpg) no-repeat;
+    background: url(../images/hre.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed
@@ -829,7 +829,7 @@ header .logo{
 
 .gallery{
     background-color: var(--transparent-white);
-    background: url(../f3.webp) no-repeat;
+    background: url(../images/f3.webp) no-repeat;
     background-size: cover;
     background-attachment: fixed;
     
@@ -880,7 +880,7 @@ header .logo{
     
 }
 .contact {
-    background:url(../contactbg4.jpg) no-repeat ;
+    background:url(../images/contactbg4.jpg) no-repeat ;
     background-size: cover;
     background-attachment: fixed;
     object-fit: cover;
@@ -962,7 +962,7 @@ header .logo{
 }
 .container-boxx{
     padding: 0 0;
-    background: url(../flower.webp) transparent no-repeat;
+    background: url(../images/flower.webp) transparent no-repeat;
     background-size: cover;
     padding-bottom: 0;
     
