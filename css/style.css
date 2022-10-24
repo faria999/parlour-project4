@@ -1547,7 +1547,7 @@ header .logo{
         top: 100%;
         left: 0;
         right: 0;
-        background-color: var(--transparent-white);
+        background-color: black;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
     header .navbar.active{
