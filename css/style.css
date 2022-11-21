@@ -1924,12 +1924,12 @@ header .logo{
     color: red;
 }
 .Hairstyling .box-container .box h3{
-    font-size: 3rem;
+    font-size: 2rem;
     color: white;
 }
 .Hairstyling .box-container .box  p{
    
-    font-size: 1.2rem;
+    font-size: 1rem;
     color:white;
     font-weight:bolder ;
     text-shadow: var(--text-shadow) black;
